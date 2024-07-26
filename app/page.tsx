@@ -12,7 +12,7 @@ const home = () => {
         className="z-0 object-cover"
       />
       <div className="absolute left-8 md:left-16 z-10 p-8 md:p-16 space-y-10">
-        <h1 className="text-4xl md:text-5xl font-bold text-white max-w-md" style={{ lineHeight: '3rem' }}>
+        <h1 className="text-4xl md:text-5xl font-bold text-white max-w-md" style={{ lineHeight: '4rem' }}>
           High Quality General Trading
         </h1>
         <p className="text-lg md:text-xl font-medium text-white max-w-xl">
