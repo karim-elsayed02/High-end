@@ -7,7 +7,7 @@ import ScrollButton from '../components/ScrollButton';
 const Home = () => {
   return (
     <div>
-      <div className="relative flex items-center" style={{ height: 'auto' }}>
+      <div className="relative flex items-center pt-16" style={{ height: 'auto' }}>
         <Image
           src={backgroundImg}
           alt="Background Image"
