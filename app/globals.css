@@ -173,10 +173,9 @@
   vertical-align: middle;
 }
 
-.button-custom:hover,
-.button-custom:focus {
-  background-color: #16437E;
-  color: #ffffff;
+.button-custom:hover {
+  background-color: #071e3c;
+  color: #D2A517;
 }
 
 .button-custom:active {
