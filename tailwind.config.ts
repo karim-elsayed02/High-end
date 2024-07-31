@@ -54,6 +54,7 @@ const config = {
         },
         my_gold : "#D2A517",
         my_blue : "#2F3757",
+        my_blue2: '#232E51',
         my_gray : "#878584"
       },
       borderRadius: {
