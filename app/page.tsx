@@ -1,8 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import backgroundImg from './background.png';
+import backgroundImg from '/public/background.png';
+import cardImage1 from '/public/card1.png';
+import cardImage2 from '/public/card2.png';
 import Link from 'next/link';
 import ScrollButton from '../components/ScrollButton';
+import Card from '../components/Card';
 
 const Home = () => {
   return (
@@ -36,7 +39,12 @@ const Home = () => {
         <p className="text-base md:text-lg font-medium text-gray-700 max-w-4xl text-center mb-10">
           Our mission is to deliver quality products from global markets to local retailers, fostering strong business relationships and contributing to the economic growth of the UAE.
         </p>
-        <button className="button-custom">Get Started</button>
+        <button className="button-custom mb-10">Get Started</button>
+        <div className="flex justify-center gap-2 w-full">
+          <Card imageSrc={cardImage1} text="International imports" />
+          <Card imageSrc={cardImage2} text="Product distribution" />
+          <Card imageSrc={cardImage1} text="Retail delivery" />
+        </div>
       </div>
     </div>
   );

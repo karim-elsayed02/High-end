@@ -76,6 +76,10 @@
   .button-border:hover {
     @apply bg-white text-black;
   }
+
+  .card {
+    @apply bg-[#2F3757] text-white text-center py-2 font-semibold text-lg flex items-center justify-center;
+  }
 }
 
 @layer base {
