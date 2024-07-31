@@ -6,7 +6,13 @@ const ScrollButton = () => {
   const scrollToSection = () => {
     const section = document.getElementById('second-section');
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = sectionTop - 80;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
     }
   };
 
