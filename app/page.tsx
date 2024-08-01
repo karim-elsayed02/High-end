@@ -6,6 +6,9 @@ import cardImage2 from '/public/card2.png';
 import Link from 'next/link';
 import ScrollButton from '../components/ScrollButton';
 import Card from '../components/Card';
+import BackgrounImg2 from '@/logos/image 3.png'
+import ellipse from '@/logos/Ellipse 2.svg'
+import ContactCard from '@/components/ContactCard';
 
 const Home = () => {
   return (
@@ -44,6 +47,58 @@ const Home = () => {
           <Card imageSrc={cardImage1} text="International imports" />
           <Card imageSrc={cardImage2} text="Product distribution" />
           <Card imageSrc={cardImage1} text="Retail delivery" />
+        </div>
+      </div>
+      {/** contact us section */}
+      <div className='relative my-8 h-full'>
+        <Image className="w-full z-0 object-cover" src={BackgrounImg2} alt="Background image" />
+        <Image src={ellipse}  className="absolute top-0 right-0 w-[79%]  h-full object-cover z-2"/>
+        <div className="flex flex-col absolute left-16 top-16 w-[47%] h-[79%] z-3 bg-white justify-between items-start pl-10">
+          <div>
+            <div className='bg-my_gold text-white w-[36%] h-[9%] absolute top-0 left-10  rounded-b-3xl flex items-center font-medium text-2xl justify-center'>Contact Us</div>
+            
+          </div>
+          <p className='text-my_gray font-normal w-[88%] mt-8'>Please enter your details and your enquiry and we will get back to you as soon as possible</p>
+          <div className='flex items-center justify-between w-[88%]'>
+            <div className='flex flex-col justify-between space-y-4 h-[100%] w-[50%]'>
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="First Name"
+              className='w-[80%] rounded-lg border-2 border-[#BCB9B9] h-[40%] p-3 shadow-md'
+              />
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="Email"
+              className='w-[80%] rounded-lg border-2 border-[#BCB9B9] h-[40%] p-3 shadow-md'
+              />
+            </div>
+            <div className='flex flex-col justify-between space-y-4 w-[50%]'>
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="Last Name"
+              className='w-[80%] rounded-lg border-2 border-[#BCB9B9] h-[40%] p-3 shadow-md'
+              />
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="Phone Number"
+              className='w-[80%] rounded-lg border-2 border-[#BCB9B9] h-[40%] p-3 shadow-md'
+              />
+            </div>
+          </div>
+          <input
+              type="text"
+              id="nameInput"
+              placeholder="Message"
+              className='w-[88%] rounded-lg border-2 border-[#BCB9B9] h-[38%] p-3 shadow-md'
+              />
+          <button className='button-custom w-[30%] h-[10%] rounded-none  bg-my_blue mb-7'>
+            Submit 
+          </button>
+           
         </div>
       </div>
     </div>
