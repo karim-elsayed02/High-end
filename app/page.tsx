@@ -9,8 +9,9 @@ import Link from 'next/link';
 import ScrollButton from '../components/ScrollButton';
 import Card from '../components/Card';
 import contactImage from '@/images/contact_image.png';
-import ellipse from '@/logos/Ellipse 2.svg';
+import ellipse from '@/logos/ellipse.svg';
 import ContactCard from '@/components/ContactCard';
+import experienceLogo from '@/logos/experience.svg';
 
 const Home = () => {
   const scrollToContact = () => {
@@ -85,6 +86,19 @@ const Home = () => {
             <p className="text-lg md:text-lg font-medium w-[85%]">
               We aim to bridge the gap between global suppliers and local retailers, ensuring a seamless supply chain and the availability of top-notch products in the market.
             </p>
+            <div className="mt-8 flex justify-start items-center">
+              <div className="relative flex items-center justify-center w-36 h-36">
+                <div className="flex items-center justify-center w-36 h-36 rounded-full bg-[#D2A517]">
+                  <div className="w-28 h-28 rounded-full bg-[#2A317A] flex items-center justify-center">
+                    <Image src={experienceLogo} alt="Experience logo" width={75} height={75} />
+                  </div>
+                </div>
+              </div>
+              <div className="ml-4">
+                <p className="text-3xl font-bold mb-2">10+ years</p>
+                <p className="text-md font-medium w-[60%]">of Experience in the trading Industry</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

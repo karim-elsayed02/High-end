@@ -27,7 +27,7 @@ const NavBar = () => {
 
   return (
     <nav className={`bg-white flex justify-between items-center p-4 transition-shadow duration-300 ${scrolled ? 'shadow-md' : ''} fixed w-full top-0 left-0 z-50`}>
-      <div className="flex items-center">
+      <div className="flex items-center cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
         <Image src={english_logo} alt="Highend logo" height={65} width={50} /> 
         <div className="flex flex-col ml-2"> 
           <p className="text-xl p-0 m-0 text-my_blue leading-none">HIGH END</p>
