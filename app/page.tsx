@@ -18,7 +18,7 @@ const Home = () => {
     const section = document.getElementById('contact-section');
     if (section) {
       const sectionTop = section.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = sectionTop - 70;
+      const offsetPosition = sectionTop - 60;
 
       window.scrollTo({
         top: offsetPosition,
@@ -46,9 +46,9 @@ const Home = () => {
             <Link href="/services" legacyBehavior>
               <a className="button-filled">Our Services</a>
             </Link>
-            <a href="#" className="button-border" onClick={scrollToContact}>
+            <button className="button-border" onClick={scrollToContact}>
               Contact
-            </a>
+            </button>
           </div>
         </div>
         <ScrollButton />
@@ -82,11 +82,11 @@ const Home = () => {
             <ContactCard />
           </div>
           <div className="w-[45%] text-white pt-48">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">Reliable and committed to excellence</h2>
-            <p className="text-lg md:text-lg font-medium w-[85%]">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{ lineHeight: '4rem' }}>Reliable and committed to excellence</h2>
+            <p className="text-lg md:text-lg font-medium w-[85%] mb-12">
               We aim to bridge the gap between global suppliers and local retailers, ensuring a seamless supply chain and the availability of top-notch products in the market.
             </p>
-            <div className="mt-8 flex justify-start items-center">
+            <div className="flex justify-start items-center">
               <div className="relative flex items-center justify-center w-36 h-36">
                 <div className="flex items-center justify-center w-36 h-36 rounded-full bg-[#D2A517]">
                   <div className="w-28 h-28 rounded-full bg-[#2A317A] flex items-center justify-center">
