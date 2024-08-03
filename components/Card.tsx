@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ imageSrc, text }) => {
   return (
-    <div className="rounded-2xl overflow-hidden shadow-lg mx-2 my-4" style={{ width: '25%', height: '400px' }}>
+    <div className="rounded-2xl overflow-hidden shadow-lg mx-2 my-4 w-10/12 md:w-1/4" style={{ height: '414px' }}>
       <div className="relative w-full" style={{ height: '80%' }}>
         <Image src={imageSrc} alt={text} layout="fill" objectFit="cover" />
       </div>

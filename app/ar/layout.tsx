@@ -3,7 +3,7 @@ import NavBar from "@/components/NavBar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({ 

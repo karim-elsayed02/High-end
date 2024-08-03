@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactCard = () => {
   return (
-    <div className="flex flex-col absolute left-16 top-16 w-[45%] h-[70%] z-3 bg-white justify-start items-center pb-10 pt-24 rounded-[30px] shadow-md">
+    <div className="flex flex-col absolute md:left-16 md:top-16 w-[45%] h-[70%] z-3 bg-white justify-start items-center pb-10 pt-24 rounded-[30px] shadow-md">
       <div>
         <div className='bg-my_gold text-white w-[25%] h-[7%] absolute top-0 left-14 rounded-b-3xl flex items-center font-semibold text-2xl justify-center'>Contact Us</div>
       </div>
