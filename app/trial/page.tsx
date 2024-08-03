@@ -95,7 +95,7 @@ const Trial = () => {
             We aim to bridge the gap between global suppliers and local retailers, ensuring a seamless supply chain and the availability of top-notch products in the market.
           </p>
         </div>
-        <div className="w-4/5">
+        <div className="w-4/5 items-center">
           <ContactCard />
         </div>
       </div>
